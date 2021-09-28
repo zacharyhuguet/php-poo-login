@@ -8,7 +8,7 @@ Class User{
     /**
      * Get the value of _email
      */ 
-    public function get_email()
+    public function getEmail()
     {
         return $this->_email;
     }
@@ -18,7 +18,7 @@ Class User{
      *
      * @return  self
      */ 
-    public function set_email($_email)
+    public function setEmail($_email)
     {
         $this->_email = $_email;
 
@@ -28,7 +28,7 @@ Class User{
     /**
      * Get the value of _password
      */ 
-    public function get_password()
+    public function getPassword()
     {
         return $this->_password;
     }
@@ -38,9 +38,29 @@ Class User{
      *
      * @return  self
      */ 
-    public function set_password($_password)
+    public function setPassword($_password)
     {
         $this->_password = $_password;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of _role
+     */ 
+    public function getRole()
+    {
+        return $this->_role;
+    }
+
+    /**
+     * Set the value of _role
+     *
+     * @return  self
+     */ 
+    public function setRole($_role)
+    {
+        $this->_role = $_role;
 
         return $this;
     }
